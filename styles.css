@@ -1,0 +1,116 @@
+/* Fond général de la page */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #b22222; /* rouge foncé */
+    color: #ffffff;
+    text-align: center;
+}
+
+/* En-tête */
+.main-header {
+    background-color: #ffffff;
+    color: #b22222;
+    padding: 20px;
+    border-bottom: 3px solid #b22222;
+}
+
+.main-header img.banniere {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.main-header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+/* Menu de navigation */
+.nav-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #b22222;
+    font-weight: bold;
+}
+
+.nav-menu a:hover {
+    text-decoration: underline;
+}
+
+/* Recherche */
+.search-container input[type="text"] {
+    padding: 8px;
+    width: 200px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+}
+
+/* Message de bienvenue */
+.welcome-message h2 {
+    margin-top: 30px;
+    font-size: 1.5em;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Animation d’apparition */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Bouton retour en haut */
+#topBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #fff;
+    color: #b22222;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+}
+
+/* Panier */
+#cart {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    background-color: #fff;
+    color: #b22222;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Icônes réseaux sociaux */
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a img {
+    margin: 0 5px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .nav-menu ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-container input[type="text"] {
+        width: 100%;
+        max-width: 300px;
+    }
+}
