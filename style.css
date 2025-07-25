@@ -94,3 +94,19 @@ body {
     height: auto;
     margin-bottom: 10px;
 }
+/* Styles de base */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Responsivité mobile */
+@media (max-width: 768px) {
+  header .menu ul { display: none; } /* Cache le menu horizontal */
+  header .burger { display: block; } /* Montre le menu burger */
+  .produit { width: 100% !important; } /* Produit prend toute la largeur */
+  .search-container input {
+    width: 90%; margin: 10px auto; display: block;
+  }
+}
