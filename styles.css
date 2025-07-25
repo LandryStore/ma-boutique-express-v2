@@ -4,7 +4,12 @@ body {
   font-family: Arial, sans-serif;
   background-color: #fff;
 }
-
+body {
+  background-color: #B22222; /* Rouge foncé chaleureux */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
 header {
   background-color: #B22222; /* Rouge foncé */
   padding: 20px;
